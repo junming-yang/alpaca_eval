@@ -5,6 +5,9 @@
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/release/python-3100/)
 [![discord](https://img.shields.io/badge/discord-server-blue?logo=discord&logoColor=white)](https://discord.gg/GJMxJSVZZM)
 
+This is a support for deepseek-v3 as evaluator in AlpacaEval. You can revise the `src/alpaca_eval/evaluators_configs/deepseek_v3_eval/configs.yaml` to your deepseek-V3 model name, and set the api proxy to corresponding base and key. And you should use the `--annotators_config 'deepseek_v3_eval'` in your command.
+
+----
 
 **AlpacaEval 2.0 with length-controlled win-rates** ([paper](https://arxiv.org/abs/2404.04475)) has a spearman correlation of **0.98** with [ChatBot Arena](https://huggingface.co/spaces/lmsys/chatbot-arena-leaderboard) while costing less than **$10** of OpenAI credits run and running in less than 3 minutes. Our goal is to have a benchmark for chat LLMs that is: fast (< 5min), cheap (< $10), and highly correlated with humans (0.98). Here's a comparison with other benchmarks:
 
